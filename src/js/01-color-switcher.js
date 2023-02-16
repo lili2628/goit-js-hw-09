@@ -8,7 +8,7 @@ btnStop.addEventListener('click', onBtnStopClick);
 btnStop.disabled = true;
 
 function onBtnStartClick(event)  {
-    timerId = setInterval(changeColorOfBody, 1000);
+    const timerId = setInterval(changeColorOfBody, 1000);
 
     event.target.disabled = true;
     btnStop.disabled = false;
