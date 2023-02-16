@@ -1,8 +1,6 @@
 import Notiflix from 'notiflix';
 
 const formEl = document.querySelector('.form');
-let delay = 0; 
-let position = 1;
 
 function createPromise(position, delay) {
 
@@ -27,8 +25,8 @@ function onCreatePromise(e) {
 
   const STEP = Number(formEl.elements.step.value);
   const AMOUNT = Number(formEl.elements.amount.value);
-
-  delay = Number(formEl.elements.delay.value);
+  let delay = Number(formEl.elements.delay.value);
+  let position = 1;
 
   while (position <= AMOUNT) {
     createPromise(position, delay)
