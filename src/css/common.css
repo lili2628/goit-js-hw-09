@@ -16,3 +16,34 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer{
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: solid 2px black;
+  border-radius: 10%;
+  background-color: black;
+}
+
+.value, 
+.label{
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.value{
+  color:darkorange;
+  font-size: 24px;
+}
+
+.label{
+  color: white;
+}
