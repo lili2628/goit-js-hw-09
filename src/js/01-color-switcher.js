@@ -5,22 +5,21 @@ const bodyEl = document.body;
 btnStart.addEventListener('click', onBtnStartClick);
 btnStop.addEventListener('click', onBtnStopClick);
 
-btnStop.setAttribute('disabled', true);
+btnStop.disabled = true;
 
 function onBtnStartClick(event)  {
     timerId = setInterval(changeColorOfBody, 1000);
 
-    event.target.setAttribute('disabled', true);
-    btnStop.removeAttribute('disabled');
+    event.target.disabled = true;
+    btnStop.disabled = false;
 }
 
 function onBtnStopClick(event)  {
     clearInterval(timerId);
     
-    event.target.setAttribute('disabled', true);
-    btnStart.removeAttribute('disabled');
+    event.target.disabled = true;
+    btnStart.disabled = false;
 }
-
 
 function changeColorOfBody() {
         const colorRandom = getRandomHexColor();
