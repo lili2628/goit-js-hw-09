@@ -40,4 +40,6 @@ function onCreatePromise(e) {
     delay += STEP;
     position += 1;
   }
+
+  e.target.reset();
 }
